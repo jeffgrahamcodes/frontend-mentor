@@ -1,0 +1,58 @@
+:root {
+  /* COLOR */
+  --yellow: hsl(47, 88%, 63%);
+  --gray-950: hsl(0, 0%, 7%);
+  --gray-500: hsl(0, 0%, 42%);
+  --white: hsl(0, 0%, 100%);
+
+  /* TYPOGRAPHY */
+  --text-preset-1-size: 24px;
+  --text-preset-2-size: 16px;
+  --text-preset-3-size: 14px;
+
+  /* SPACING */
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+body {
+  line-height: 150%;
+  letter-spacing: 0;
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
+
+  .card img {
+    width: 279px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
