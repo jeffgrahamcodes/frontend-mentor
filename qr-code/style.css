@@ -1,67 +1,144 @@
+:root {
+  /* Color */
+  --slate-900: hsl(218, 44%, 22%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-300: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
-    height: 100vh;
-    font-family: "Outfit", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    background-color: hsl(212, 45%, 89%);
-    margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slate-300);
+  margin: 0;
 }
 
 .content {
-    background-color: hsl(0, 0%, 100%);
-    padding: 16px 16px 40px 16px;
-    border-radius: 20px;
-    text-align: center;
-    width: 320px;
-    height: 499px;
-    box-sizing: border-box;
+  background-color: var(--white);
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
+    var(--spacing-200);
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  height: 499px;
+  box-sizing: border-box;
 }
 
 .content img {
-    width: 288px;
-    height: 288px;
-    border-radius: 10px;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+  margin-bottom: var(--spacing-300);
 }
 
-.hug {
-    width: 288px;
-    height: 131px;
-    margin: 0 auto;
-    padding: 16px;
-    box-sizing: border-box;
+.text {
+  width: 288px;
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--spacing-200);
+  box-sizing: border-box;
 }
 
-.hug h1 {
-    color: hsl(218, 44%, 22%);
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: 0;
-    line-height: 120%;
-    margin: 0 0 16px 0;
+.text h1 {
+  color: var(--slate-900);
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 120%;
+  margin: 0 0 var(--spacing-200) 0;
 }
 
-.hug p{
-    color: hsl(216, 15%, 48%);
-    line-height: 140%;
-    letter-spacing: 0.2px;
-    margin: 0;
+.text p {
+  color: var(--slate-500);
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
 }
 
 .attribution {
-     font-size: 11px; 
-     text-align: center; 
-     position: fixed;
-     bottom: 0;
-     padding: 16px;
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
 }
-    
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media only screen and (max-width: 375px) {
-    
 }
