@@ -31,8 +31,6 @@ body {
 
 .card {
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   width: 384px;
   height: 522px;
@@ -57,27 +55,37 @@ body {
 }
 
 .date {
+  margin-top: var(--spacing-150);
   font-size: var(--text-preset-3-size);
 }
 
 .title {
   font-size: var(--text-preset-1-size);
   font-weight: bolder;
+  margin-top: var(--spacing-150);
 }
 
 .description {
   font-size: var(--text-preset-2-size);
   color: var(--gray-500);
+  margin-top: var(--spacing-150);
 }
 
 .author {
   display: flex;
   align-items: center;
+  margin-top: var(--spacing-300);
 }
 
 .username {
   font-size: var(--text-preset-3-size);
   font-weight: bold;
+  margin-left: var(--spacing-150);
+}
+
+.userpic {
+  height: 32px;
+  width: 32px;
 }
 
 .attribution {
