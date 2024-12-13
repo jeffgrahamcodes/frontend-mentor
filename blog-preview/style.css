@@ -41,8 +41,11 @@ body {
 }
 
 .card > img {
-  border-radius: 10px;
   margin-bottom: var(--spacing-300);
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .category {
@@ -101,4 +104,11 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
 }
