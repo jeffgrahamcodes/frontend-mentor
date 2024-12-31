@@ -17,98 +17,121 @@
   --spacing-50: 4px;
 }
 
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
 body {
-  line-height: 150%;
-  letter-spacing: 0;
-  background-color: var(--yellow);
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Figtree", sans-serif;
+  background-color: var(--yellow);
+  font-family: 'Figtree', serif;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
   background-color: var(--white);
   box-sizing: border-box;
-  width: 384px;
-  height: 522px;
-  border-radius: 20px;
   padding: var(--spacing-300);
-  box-shadow: 8px 8px #000;
-  color: var(--gray-950);
+  border-radius: 20px;
+  border: 1px solid var(--gray-950);
+  box-shadow: 8px 8px 0 0 #000;
 }
 
-.card > img {
-  margin-bottom: var(--spacing-300);
-  width: 100%;
+.blog-image {
+  padding-bottom: var(--spacing-300);
+}
+
+.blog-image img {
   height: 200px;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 .category {
   background-color: var(--yellow);
+  color: var(--gray-950);
   padding: var(--spacing-50) var(--spacing-150);
   border-radius: 4px;
-  font-size: var(--text-preset-3-size);
   font-weight: bold;
-  box-sizing: border-box;
-}
-
-.date {
-  margin-top: var(--spacing-150);
-  font-size: var(--text-preset-3-size);
-}
-
-.title {
-  font-size: var(--text-preset-1-size);
-  font-weight: bolder;
-  margin-top: var(--spacing-150);
-}
-
-.title:hover {
-  color: var(--yellow);
-  cursor: pointer;
-}
-
-.description {
-  font-size: var(--text-preset-2-size);
-  color: var(--gray-500);
-  margin-top: var(--spacing-150);
 }
 
 .author {
   display: flex;
   align-items: center;
-  margin-top: var(--spacing-300);
-}
-
-.username {
-  font-size: var(--text-preset-3-size);
-  font-weight: bold;
-  margin-left: var(--spacing-150);
-}
-
-.userpic {
-  height: 32px;
-  width: 32px;
 }
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  padding: var(--spacing-300);
   position: absolute;
   bottom: 0;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media screen and (max-width: 375px) {
-  .card {
-    width: 327px;
-    height: 501px;
-  }
 }
