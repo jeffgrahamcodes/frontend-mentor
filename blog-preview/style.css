@@ -109,7 +109,7 @@ body {
 }
 
 .blog-image {
-  padding-bottom: var(--spacing-300);
+  margin-bottom: var(--spacing-300);
 }
 
 .blog-image img {
@@ -125,9 +125,30 @@ body {
   font-weight: bold;
 }
 
+.publish-date {
+  margin-top: var(--spacing-150);
+}
+
+.title {
+  margin-top: var(--spacing-150);
+  font-size: var(--text-preset-1-size);
+  font-weight: bold;
+}
+
+.description {
+  margin-top: var(--spacing-150);
+}
+
 .author {
   display: flex;
   align-items: center;
+  margin-top: var(--spacing-300);
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+  margin-right: var(--spacing-150);
 }
 
 .attribution {
