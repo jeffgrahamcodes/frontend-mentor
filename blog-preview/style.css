@@ -9,6 +9,7 @@
   --text-preset-1-size: 24px;
   --text-preset-2-size: 16px;
   --text-preset-3-size: 14px;
+  --line-height: 150%;
 
   /* SPACING */
   --spacing-300: 24px;
@@ -31,7 +32,7 @@
 
 body {
   /* 3. Add accessible line-height */
-  line-height: 1.5;
+  line-height: var(--line-height);
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
@@ -142,6 +143,7 @@ body {
 
 .description {
   margin-top: var(--spacing-150);
+  color: var(--gray-500);
 }
 
 .author {
