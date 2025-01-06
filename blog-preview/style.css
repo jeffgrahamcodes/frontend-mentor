@@ -135,6 +135,11 @@ body {
   font-weight: bold;
 }
 
+.title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
 .description {
   margin-top: var(--spacing-150);
 }
