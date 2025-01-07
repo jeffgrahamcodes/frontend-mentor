@@ -15,6 +15,7 @@
   --spacing-500: 40px;
   --spacing-300: 24px;
   --spacing-200: 16px;
+  --spacing-150: 12px;
   --spacing-100: 8px;
   --spacing-50: 4px;
 }
@@ -132,6 +133,35 @@ body {
   font-size: var(--text-preset-2);
   font-weight: bold;
   color: var(--green);
+}
+
+.bio {
+  margin-top: var(--spacing-300);
+  font-size: var(--text-preset-2);
+}
+
+.links {
+  margin-top: var(--spacing-300);
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+.links button {
+  width: 304px;
+  background-color: var(--gray-700);
+  padding: var(--spacing-150);
+  color: var(--white);
+  border: 0;
+  border-radius: 8px;
+  font-size: var(--text-preset-2);
+  font-weight: bold;
 }
 
 .attribution {
