@@ -164,6 +164,12 @@ body {
   font-weight: bold;
 }
 
+.links button:active {
+  background-color: var(--green);
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
