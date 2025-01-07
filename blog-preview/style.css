@@ -125,7 +125,7 @@ body {
   padding: var(--spacing-50) var(--spacing-150);
   border-radius: 4px;
   font-size: var(--text-preset-3-size);
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .publish-date {
