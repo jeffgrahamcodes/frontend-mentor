@@ -119,6 +119,21 @@ body {
   border-radius: 999px;
 }
 
+.name-location {
+  margin-top: var(--spacing-300);
+}
+
+.title {
+  font-size: var(--text-preset-1);
+  font-weight: bold;
+}
+
+.description {
+  font-size: var(--text-preset-2);
+  font-weight: bold;
+  color: var(--green);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
