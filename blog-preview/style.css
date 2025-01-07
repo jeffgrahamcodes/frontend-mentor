@@ -135,7 +135,7 @@ body {
   font-weight: 500;
 }
 
-.title h2 {
+.title {
   margin-top: var(--spacing-150);
   font-size: var(--text-preset-1-size);
   font-weight: 800;
@@ -147,7 +147,7 @@ body {
   cursor: pointer;
 }
 
-.description p {
+.description {
   margin-top: var(--spacing-150);
   font-size: var(--text-preset-2-size);
   font-weight: 500;
