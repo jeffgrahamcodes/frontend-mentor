@@ -94,7 +94,7 @@ body {
   align-items: center;
   background-color: var(--yellow);
   font-family: 'Figtree', serif;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0px;
 }
 
@@ -119,13 +119,14 @@ body {
   border-radius: 10px;
 }
 
-.category {
+.category p {
   background-color: var(--yellow);
   color: var(--gray-950);
   padding: var(--spacing-50) var(--spacing-150);
   border-radius: 4px;
   font-size: var(--text-preset-3-size);
   font-weight: 800;
+  display: inline-block;
 }
 
 .publish-date {
@@ -134,10 +135,11 @@ body {
   font-weight: 500;
 }
 
-.title {
+.title h2 {
   margin-top: var(--spacing-150);
   font-size: var(--text-preset-1-size);
   font-weight: 800;
+  line-height: 1.5;
 }
 
 .title:hover {
@@ -145,7 +147,7 @@ body {
   cursor: pointer;
 }
 
-.description {
+.description p {
   margin-top: var(--spacing-150);
   font-size: var(--text-preset-2-size);
   font-weight: 500;
