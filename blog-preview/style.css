@@ -32,7 +32,6 @@
 
 body {
   /* 3. Add accessible line-height */
-  line-height: var(--line-height);
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
@@ -95,6 +94,8 @@ body {
   align-items: center;
   background-color: var(--yellow);
   font-family: 'Figtree', serif;
+  line-height: 150%;
+  letter-spacing: 0px;
 }
 
 .card {
@@ -123,17 +124,20 @@ body {
   color: var(--gray-950);
   padding: var(--spacing-50) var(--spacing-150);
   border-radius: 4px;
+  font-size: var(--text-preset-3-size);
   font-weight: bold;
 }
 
 .publish-date {
   margin-top: var(--spacing-150);
+  font-size: var(--text-preset-3-size);
+  font-weight: 500;
 }
 
 .title {
   margin-top: var(--spacing-150);
   font-size: var(--text-preset-1-size);
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .title:hover {
@@ -143,6 +147,8 @@ body {
 
 .description {
   margin-top: var(--spacing-150);
+  font-size: var(--text-preset-2-size);
+  font-weight: 500;
   color: var(--gray-500);
 }
 
@@ -156,6 +162,11 @@ body {
   width: 32px;
   height: 32px;
   margin-right: var(--spacing-150);
+}
+
+.authorname {
+  font-size: var(--text-preset-3-size);
+  font-weight: 800;
 }
 
 .attribution {
