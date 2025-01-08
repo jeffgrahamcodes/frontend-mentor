@@ -185,4 +185,8 @@ body {
   .card {
     width: 456px;
   }
+
+  .links button {
+    width: 376px;
+  }
 }
