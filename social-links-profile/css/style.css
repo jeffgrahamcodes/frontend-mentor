@@ -190,3 +190,18 @@ body {
     width: 376px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    padding: var(--spacing-300);
+  }
+
+  .bio {
+    width: 279px;
+  }
+
+  .links button {
+    width: 279px;
+  }
+}
