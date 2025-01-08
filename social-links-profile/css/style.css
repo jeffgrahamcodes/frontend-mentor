@@ -138,6 +138,7 @@ body {
 .bio {
   margin-top: var(--spacing-300);
   font-size: var(--text-preset-2);
+  font-weight: 400;
 }
 
 .links {
@@ -178,4 +179,10 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 456px;
+  }
 }
