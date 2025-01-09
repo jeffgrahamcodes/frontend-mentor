@@ -106,3 +106,61 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: var(--white);
+  }
+
+  .card {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .top-image {
+    width: 100%;
+  }
+
+  .text-content {
+    padding: var(--spacing-500) var(--spacing-400);
+  }
+
+  .title h1 {
+    font-size: var(--text-preset-1-size);
+    line-height: var(--line-height-100);
+    font-family: var(--young-serif);
+    color: var(--stone-900);
+    font-weight: 400;
+  }
+
+  .title p {
+    font-size: var(--text-preset-4-size);
+    color: var(--stone-600);
+    font-family: var(--outfit-font);
+  }
+
+  .preparation {
+    border-radius: 12px;
+    padding: var(--spacing-300);
+    background-color: var(--rose-80);
+    font-family: var(--outfit-font);
+  }
+
+  .preparation h3 {
+    font-size: var(--text-preset-3-size);
+    color: var(--rose-800);
+    line-height: var(--line-height-100);
+    font-weight: 600;
+  }
+
+  .preparation ul {
+    color: var(--stone-600);
+  }
+
+  .ingredients h2 {
+    color: var(--brown-800);
+    font-family: var(--young-serif);
+    line-height: var(--line-height-100);
+    font-weight: 400;
+  }
+}
