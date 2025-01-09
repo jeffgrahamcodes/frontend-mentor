@@ -99,3 +99,10 @@ h6 {
   --spacing-150: 12px;
   --spacing-100: 8px;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
