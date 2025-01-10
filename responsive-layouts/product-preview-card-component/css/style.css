@@ -96,6 +96,7 @@ body {
   background-color: var(--pure-white);
   border-radius: 10px;
   width: 343px;
+  box-sizing: border-box;
 }
 
 .card img {
@@ -104,7 +105,7 @@ body {
 
 .content {
   width: 295px;
-  margin: 0 auto;
+  margin: 24px;
 }
 
 .category {
@@ -121,13 +122,19 @@ body {
   line-height: 32px;
   letter-spacing: 0;
   color: var(--gunmetal);
+  margin-top: 12px;
 }
 
 .description {
+  margin-top: 12px;
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
   letter-spacing: 0;
+}
+
+.price {
+  margin-top: 24px;
 }
 
 .price p {
@@ -142,6 +149,7 @@ body {
   line-height: 32px;
   letter-spacing: 0;
   color: var(--deep-aquamarine);
+  margin-right: 19px;
 }
 
 .original {
@@ -165,5 +173,10 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
 }
