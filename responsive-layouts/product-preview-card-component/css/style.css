@@ -78,6 +78,7 @@ h6 {
 }
 
 body {
+  font-family: 'Montserrat', serif;
   background-color: var(--cream);
   display: flex;
   flex-direction: column;
@@ -88,5 +89,18 @@ body {
 
 .card {
   background-color: var(--pure-white);
+  border-radius: 10px 10px 0 0;
   width: 343px;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--aurometal-saurus);
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
