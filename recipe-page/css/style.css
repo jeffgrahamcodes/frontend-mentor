@@ -86,7 +86,7 @@ h6 {
   --text-preset-3-size: 20px;
   --text-preset-4-size: 16px;
   --line-height-100: 1;
-  --young-serif: 'Young Serif', serif;
+  --young-serif-font: 'Young Serif', serif;
   --outfit-font: 'Outfit', serif;
 
   /* SPACING */
@@ -110,11 +110,12 @@ body {
 @media screen and (max-width: 375px) {
   body {
     background-color: var(--white);
+    width: 375px;
   }
 
   .card {
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .top-image {
@@ -122,25 +123,30 @@ body {
   }
 
   .text-content {
-    padding: var(--spacing-500) var(--spacing-400);
+    margin: var(--spacing-500) var(--spacing-400);
   }
 
   .title h1 {
-    font-size: var(--text-preset-1-size);
+    font-size: 36px;
     line-height: var(--line-height-100);
-    font-family: var(--young-serif);
+    font-family: var(--young-serif-font);
     color: var(--stone-900);
     font-weight: 400;
+    letter-spacing: 0px;
+    text-wrap: wrap;
   }
 
   .title p {
     font-size: var(--text-preset-4-size);
     color: var(--stone-600);
     font-family: var(--outfit-font);
+    margin-top: var(--spacing-300);
+    font-weight: 400;
   }
 
   .preparation {
     border-radius: 12px;
+    margin-top: var(--spacing-400);
     padding: var(--spacing-300);
     background-color: var(--rose-80);
     font-family: var(--outfit-font);
@@ -155,6 +161,11 @@ body {
 
   .preparation ul {
     color: var(--stone-600);
+    margin-top: var(--spacing-200);
+  }
+
+  .ingredients {
+    margin-top: var(--spacing-400);
   }
 
   .ingredients h2 {
@@ -162,5 +173,22 @@ body {
     font-family: var(--young-serif);
     line-height: var(--line-height-100);
     font-weight: 400;
+  }
+
+  .ingredients ul {
+    margin-top: var(--spacing-300);
+  }
+
+  .line {
+    margin: var(--spacing-400) 0;
+    border: 1px dotted var(--stone-150);
+  }
+
+  .instructions ol {
+    margin-top: var(--spacing-300);
+  }
+
+  .nutrition p {
+    margin: var(--spacing-300) 0;
   }
 }
