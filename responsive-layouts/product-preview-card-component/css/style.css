@@ -180,3 +180,35 @@ body {
   position: absolute;
   bottom: 0;
 }
+
+@media screen and (min-width: 376px) {
+  .card {
+    display: flex;
+    width: 600px;
+    height: 450px;
+  }
+
+  .card picture {
+    width: 100%;
+  }
+
+  .card picture img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+  }
+
+  .content {
+    width: 236px;
+    box-sizing: border-box;
+  }
+
+  .description {
+    width: 237px;
+    margin-top: 24px;
+  }
+
+  .btn {
+    margin-top: 24px;
+    width: 100%;
+  }
+}
