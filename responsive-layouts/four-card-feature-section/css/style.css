@@ -1,0 +1,16 @@
+/* VARIABLES */
+:root {
+  --red: #ea5454;
+  --teal: #44d3d2;
+  --goldenrod: #fcae4a;
+  --blue: #549ef2;
+  --slate: #4d4f62;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
