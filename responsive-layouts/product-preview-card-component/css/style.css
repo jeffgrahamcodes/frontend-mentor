@@ -105,7 +105,11 @@ body {
 
 .content {
   width: 295px;
-  margin: 24px;
+  margin: 12px 24px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .category {
@@ -122,19 +126,13 @@ body {
   line-height: 32px;
   letter-spacing: 0;
   color: var(--gunmetal);
-  margin-top: 12px;
 }
 
 .description {
-  margin-top: 12px;
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
   letter-spacing: 0;
-}
-
-.price {
-  margin-top: 24px;
 }
 
 .price p {
@@ -173,7 +171,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  margin-top: 12px;
 }
 
 .attribution {
@@ -198,17 +195,16 @@ body {
   }
 
   .content {
-    width: 236px;
-    box-sizing: border-box;
+    width: 300px;
+    height: 450px;
+    padding: 12px;
   }
 
   .description {
     width: 237px;
-    margin-top: 24px;
   }
 
   .btn {
-    margin-top: 24px;
     width: 100%;
   }
 }
