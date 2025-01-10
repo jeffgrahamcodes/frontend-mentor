@@ -207,4 +207,9 @@ body {
   .btn {
     width: 100%;
   }
+
+  .btn:active {
+    background-color: var(--deep-aquamarine-hover);
+    cursor: pointer;
+  }
 }
