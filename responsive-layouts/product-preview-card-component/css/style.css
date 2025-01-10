@@ -69,17 +69,22 @@ h6 {
 
 /* DESIGN SYSTEM */
 :root {
+  /* COLORS */
   --pure-white: #ffffff;
   --cream: #f2eae2;
   --aurometal-saurus: #6c7289;
   --deep-aquamarine: #3d8168;
   --deep-aquamarine-hover: #1a4032;
   --gunmetal: #1c232b;
+
+  /* TYPOGRAPHY */
+  --fraunces: 'Fraunces', serif;
 }
 
 body {
   font-family: 'Montserrat', serif;
   background-color: var(--cream);
+  color: var(--aurometal-saurus);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +105,44 @@ body {
 .category {
   font-size: 12px;
   font-weight: 500;
-  color: var(--aurometal-saurus);
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+.title {
+  font-family: var(--fraunces);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: var(--gunmetal);
+}
+
+.description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0;
+}
+
+.price p {
+  display: flex;
+  align-items: center;
+}
+
+.sale {
+  font-family: var(--fraunces);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: var(--deep-aquamarine);
+}
+
+.original {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0;
 }
