@@ -108,6 +108,10 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  :root {
+    --text-preset-1-size: 36px;
+  }
+
   body {
     background-color: var(--white);
     width: 375px;
@@ -127,7 +131,7 @@ body {
   }
 
   .title h1 {
-    font-size: 36px;
+    font-size: var(--text-preset-1-size);
     line-height: var(--line-height-100);
     font-family: var(--young-serif-font);
     color: var(--stone-900);
@@ -160,8 +164,20 @@ body {
   }
 
   .preparation ul {
+    display: flex;
+    flex-direction: column;
     color: var(--stone-600);
     margin-top: var(--spacing-200);
+    padding-left: 24px;
+    gap: var(--spacing-100);
+  }
+
+  .preparation ul li {
+    padding-left: var(--spacing-200);
+  }
+
+  .preparation ul li::marker {
+    color: var(--rose-800);
   }
 
   .ingredients {
