@@ -94,12 +94,17 @@ body {
 
 .card {
   background-color: var(--pure-white);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   width: 343px;
 }
 
 .card img {
   border-radius: 10px 10px 0 0;
+}
+
+.content {
+  width: 295px;
+  margin: 0 auto;
 }
 
 .category {
@@ -145,4 +150,20 @@ body {
   font-size: 13px;
   line-height: 23px;
   letter-spacing: 0;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  background-color: var(--deep-aquamarine);
+  color: var(--pure-white);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 0 auto;
 }
