@@ -2,7 +2,10 @@
   --bg-color: #ecf2f8;
   --white: #ffffff;
   --purple-background: #733fc8;
-  --purple-accent: #a775f1;
+  --purple-accent1: #a775f1;
+  --purple-accent2: #733fc8;
+  --slate-background: #48556a;
+  --black-background: #19202d;
 }
 
 body {
@@ -18,14 +21,16 @@ body {
 
 .container {
   width: 327px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 70px;
 }
 
 .card {
-  background-color: black;
-  padding: 22px;
+  padding: 32px;
   box-sizing: border-box;
   border-radius: 8px;
-  background-color: var(--purple-background);
   width: 100%;
 }
 
@@ -38,7 +43,6 @@ body {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 2px solid var(--purple-accent);
 }
 
 .card .user {
@@ -61,6 +65,7 @@ body {
 }
 
 .card .headline {
+  margin-top: 20px;
   font-size: 20px;
   letter-spacing: 0;
   font-weight: 600;
@@ -69,12 +74,43 @@ body {
 }
 
 .card .quote {
+  margin-top: 20px;
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0;
   opacity: 0.7;
-  width: 247px;
+  width: 263px;
+}
+
+#dclifford {
+  background-color: var(--purple-background);
+}
+
+#dclifford img {
+  border: 2px solid var(--purple-accent);
+}
+
+#jwalters {
+  background-color: var(--slate-background);
+}
+
+#jharmon {
+  background-color: var(--white);
+  color: var(--slate-background);
+}
+
+#pabrams {
+  background-color: var(--black-background);
+}
+
+#pabrams img {
+  border: 2px solid var(--purple-accent2);
+}
+
+#kwhittle {
+  background-color: var(--white);
+  color: var(--slate-background);
 }
 
 .attribution {
