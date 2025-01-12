@@ -1,0 +1,19 @@
+body {
+  font-family: 'Barlow Semi Condensed', serif;
+  background-color: #ecf2f8;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  width: 327px;
+}
+
+.card header {
+  display: flex;
+}
