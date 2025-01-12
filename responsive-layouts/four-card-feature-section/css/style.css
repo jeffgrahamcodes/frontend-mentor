@@ -111,3 +111,46 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards section:first-of-type {
+    transform: translateY(50%);
+  }
+
+  .cards section:last-of-type {
+    transform: translateY(50%);
+  }
+
+  #supervisor {
+    order: 1;
+  }
+
+  #team-builder {
+    order: 2;
+  }
+
+  #karma {
+    order: 4;
+  }
+
+  #calculator {
+    order: 3;
+  }
+}
