@@ -121,3 +121,53 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    margin: 0;
+    width: 100%;
+    max-width: 1110px;
+    height: 572px;
+    grid-template-areas:
+      'a a b c'
+      'd e e c';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card .headline,
+  .card .quote {
+    width: 100%;
+  }
+
+  #dclifford {
+    grid-area: a;
+    width: 540px;
+    height: 282px;
+  }
+
+  #jwalters {
+    grid-area: b;
+    width: 255px;
+    height: 282px;
+  }
+
+  #kwhittle {
+    grid-area: c;
+    width: 255px;
+  }
+
+  #jharmon {
+    grid-area: d;
+    width: 255px;
+    height: 266px;
+  }
+
+  #pabrams {
+    grid-area: e;
+    width: 540px;
+    height: 266px;
+  }
+}
