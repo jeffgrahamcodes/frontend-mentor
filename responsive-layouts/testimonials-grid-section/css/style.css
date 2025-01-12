@@ -65,6 +65,16 @@ body {
   letter-spacing: 0;
   font-weight: 600;
   line-height: normal;
+  width: 263px;
+}
+
+.card .quote {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0;
+  opacity: 0.7;
+  width: 247px;
 }
 
 .attribution {
