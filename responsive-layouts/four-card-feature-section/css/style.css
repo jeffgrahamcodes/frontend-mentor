@@ -64,6 +64,7 @@ body {
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
   padding: 24px;
   position: relative;
+  background-color: #ffffff;
 }
 
 .card img {
