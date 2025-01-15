@@ -268,7 +268,7 @@ body {
   color: var(--purple-300);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
   /* TYPOGRAPHY - MOBILE */
   .text-preset-1 {
     font-size: 48px;
@@ -291,11 +291,23 @@ body {
     font-weight: 900;
   }
 
+  .hero {
+    padding: var(--800) var(--400);
+  }
+
+  .hero .buttons {
+    display: block;
+  }
+
   .hero .text-content {
     width: 448px;
     display: flex;
     flex-direction: column;
     margin-top: var(--900);
+  }
+
+  .number {
+    margin-top: var(--700);
   }
 
   .content .image-collage {
