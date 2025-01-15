@@ -190,7 +190,7 @@ body {
 }
 
 .content .image-collage {
-  margin-top: var(--800);
+  margin-top: var(--400);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -230,7 +230,6 @@ body {
   align-items: center;
   text-align: center;
   color: var(--white);
-  background-color: var(--cyan-600);
   background-image: url('../assets/mobile/image-footer.jpg');
   background-size: cover;
   padding: var(--800) var(--400);
