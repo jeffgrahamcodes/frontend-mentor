@@ -153,6 +153,38 @@ body {
   background-color: var(--purple-600);
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content .number {
+  color: var(--slate-600);
+  height: 56px;
+  width: 56px;
+  border: 1px solid var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: var(--800);
+}
+
+.content .image-collage {
+  margin-top: var(--800);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--200);
+}
+
+.content .image-collage img {
+  height: 144px;
+  border-radius: 8px;
+}
+
 .footer {
   width: 100%;
   display: flex;
