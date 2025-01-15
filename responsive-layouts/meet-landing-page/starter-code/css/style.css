@@ -297,4 +297,12 @@ body {
     flex-direction: column;
     margin-top: var(--900);
   }
+
+  .content .image-collage {
+    margin-top: var(--400);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: var(--200);
+  }
 }
