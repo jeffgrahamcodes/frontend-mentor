@@ -59,6 +59,12 @@
   font-weight: 900;
 }
 
+.btn {
+  border-radius: 29px;
+  padding: var(--200) var(--500);
+  border: 0;
+}
+
 body {
   font-family: 'Red Hat Display', serif;
   height: 100vh;
@@ -134,10 +140,7 @@ body {
 }
 
 .hero .buttons .btn {
-  border-radius: 29px;
-  padding: var(--200) var(--500);
   color: var(--white);
-  border: 0;
 }
 
 .hero .buttons .btn .version {
@@ -213,10 +216,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: var(--white);
+  background-color: var(--cyan-600);
 }
 
 .footer .number {
-  margin-top: var(--800);
   color: var(--slate-600);
   height: 56px;
   width: 56px;
@@ -225,4 +229,21 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: var(--white);
+  color: var(--slate-600);
+}
+
+.footer .text-content {
+}
+
+.footer p {
+}
+
+.footer .btn {
+  background-color: var(--purple-600);
+  color: var(--white);
+}
+
+.footer .btn .version {
+  color: var(--purple-300);
 }
