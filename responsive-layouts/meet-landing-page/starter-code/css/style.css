@@ -86,6 +86,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  max-width: 1440px;
 }
 
 /* NAVBAR */
@@ -227,9 +228,9 @@ body {
   padding: var(--1400) var(--1000);
   background-size: cover;
   position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
   transform: translateY(-28px);
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer .text-content::before {
@@ -245,9 +246,23 @@ body {
 .footer .text-content > * {
   position: relative;
 }
+
+.footer .text-content h2 {
+  margin-left: var(--1000);
+  width: 445px;
+  padding-right: var(--400);
+}
+
+.footer .text-content p {
+  width: 355px;
+  padding-right: var(--400);
+}
+
 .footer .btn {
   color: var(--white);
   background-color: var(--purple-600);
+  margin-right: var(--1000);
+  align-self: center;
 }
 
 .footer .btn .version {
