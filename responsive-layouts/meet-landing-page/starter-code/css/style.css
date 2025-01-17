@@ -144,12 +144,30 @@ body {
 .content {
   width: 100%;
   max-width: 1120px;
+  border: 1px solid red;
+  padding: var(--700) var(--1000) var(--900) var(--1000);
+}
+
+.content .number {
+  margin: 80px auto 0 auto;
+  position: relative;
+}
+
+.content .number::before {
+  content: '';
+  width: 100%;
+  height: 80px;
+  border-right: 1px solid var(--slate-300);
+  position: absolute;
+  left: -27px;
+  top: -80px;
+  z-index: 1;
 }
 
 .content .image-collage {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: var(--800) 0;
 }
 
 .content .image-collage img {
@@ -159,6 +177,10 @@ body {
 }
 
 .content .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -169,7 +191,7 @@ body {
 
 .content .text-content h2 {
   width: 544px;
-  margin: auto;
+  margin: var(--200) 0 var(--400) 0;
 }
 
 .content .text-content p {
@@ -182,6 +204,7 @@ body {
 .footer {
   color: var(--white);
   width: 100%;
+  border: 1px solid red;
 }
 
 .footer .number {
