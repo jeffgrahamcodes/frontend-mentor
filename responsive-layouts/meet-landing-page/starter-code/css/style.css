@@ -24,6 +24,13 @@
   --50: 4px;
 }
 
+body {
+  font-family: 'Red Hat Display', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* DESKTOP TYPOGRAPHY */
 .text-preset-1 {
   font-size: 64px;
@@ -50,9 +57,15 @@
 }
 
 .text-preset-5 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 900;
+}
+
+.btn {
+  padding: var(--200) var(--500);
+  border-radius: 29px;
+  border: none;
 }
 
 .container {
@@ -60,8 +73,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .navbar {
   padding: var(--1000) var(--1000) 0 var(--1000);
+}
+
+.hero {
+  padding: var(--800) var(--1000);
+  display: flex;
+  border: 1px solid red;
+  align-items: center;
+}
+
+.hero .text-content {
+  text-align: center;
+  margin: 0 var(--400);
+  width: 448.3px;
+  height: 360px;
+}
+
+.hero .text-content h1 {
+  color: var(--slate-900);
+}
+
+.hero .text-content p {
+  margin: var(--400) 0;
+  color: var(--slate-600);
+}
+
+.hero .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .buttons .btn {
+  color: var(--white);
+}
+
+.hero .buttons .btn:first-of-type {
+  background-color: var(--cyan-600);
+  margin-right: 17px;
+}
+
+.hero .buttons .btn .version {
+  color: var(--cyan-300);
+}
+
+.hero .buttons .btn:last-of-type {
+  background-color: var(--purple-600);
 }
