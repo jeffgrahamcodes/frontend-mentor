@@ -68,6 +68,10 @@ body {
   border: none;
 }
 
+.number {
+  color: var(--slate-600);
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -128,6 +132,23 @@ body {
   background-color: var(--purple-600);
 }
 
+/* MAIN CONTENT */
+.content {
+  max-width: 1120px;
+}
+
+.content .image-collage {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content .image-collage img {
+  width: 256px;
+  height: 256px;
+  border-radius: 8px;
+}
+
 /* FOOTER */
 .footer {
   color: var(--white);
@@ -139,6 +160,8 @@ body {
   padding: var(--1400) var(--1000);
   background-size: cover;
   position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .footer .text-content::before {
